@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "homepage": "https://daye0nn.github.io/2026portfolio/"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.2.0",
