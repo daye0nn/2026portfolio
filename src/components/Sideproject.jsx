@@ -8,13 +8,10 @@ import musicImg from "../images/musicplayer.JPG";
 const List = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 70px;
 `;
 
 const Item = styled.div`
   border-bottom: 1px solid var(--light-gray);
-  padding-bottom: 70px;
-
   &:last-child {
     border-bottom: none;
   }
@@ -22,6 +19,8 @@ const Item = styled.div`
     display: flex;
     align-items: center;
     gap: 80px;
+    padding: 70px 0;
+    width: 100%;
     cursor: pointer;
     p {
       font-size: 2.4rem;
@@ -37,6 +36,11 @@ const Item = styled.div`
       }
     }
   }
+  @media (max-width: 768px) {
+    a {
+      padding: 50px 0;
+    }
+  }
   @media (max-width: 480px) {
     a {
       p {
@@ -50,8 +54,8 @@ const HoverImg = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  width: 300px;
-  height: 200px;
+  width: 400px;
+  height: 250px;
   border-radius: 10px;
   pointer-events: none;
   opacity: 0;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -15,7 +15,10 @@ const Desc = styled.div`
     max-width: 700px;
   }
   @media (max-width: 768px) {
-    max-width: 500px;
+    max-width: 450px;
+  }
+  @media (max-width: 480px) {
+    max-width: 400px;
   }
 `;
 
@@ -25,6 +28,9 @@ const Title = styled.h1`
   margin-bottom: 20px;
   @media (max-width: 1024px) {
     font-size: 4rem;
+  }
+  @media (max-width: 768px) {
+    margin-bottom: 10px;
   }
 `;
 
@@ -59,15 +65,22 @@ const BtnWrap = styled.div`
     border: 1px solid var(--black);
     transition: all 0.3s;
     cursor: pointer;
+    svg {
+      transition: transform 0.3s;
+    }
     &:hover {
       background: var(--black);
       color: var(--white);
+
+      svg {
+        transform: translateX(6px);
+      }
     }
   }
 `;
 
 const Detail = styled.div`
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   text-align: center;
   img {
@@ -107,14 +120,14 @@ const ProjectDetail = ({
             <div className="button">
               <a href={siteLink} target="_blank">
                 <span>Site</span>
-                <FontAwesomeIcon icon={faArrowDown} rotation={270} />
+                <FontAwesomeIcon icon={faArrowRight} />
               </a>
             </div>
 
             <div className="button">
               <a href={codeLink} target="_blank">
                 <span>Code</span>
-                <FontAwesomeIcon icon={faArrowDown} rotation={270} />
+                <FontAwesomeIcon icon={faArrowRight} />
               </a>
             </div>
           </BtnWrap>

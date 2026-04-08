@@ -14,7 +14,6 @@ const ImgWrap = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: 70%;
   img {
     width: 100%;
@@ -26,19 +25,22 @@ const ImgWrap = styled.div`
 const Intro = () => {
   const imgRef = useRef(null);
   useEffect(() => {
+    gsap.set(imgRef.current, {
+      xPercent: -50,
+      yPercent: -50,
+    });
+
     const ani = gsap.to(imgRef.current, {
-      y: -25,
-      x: 6,
-      rotation: 0.6,
-      duration: 2.2,
+      y: -20,
+      x: 10,
+      rotation: 3,
+      duration: 2.5,
       repeat: -1,
       yoyo: true,
       ease: "sine.inOut",
     });
 
-    return () => {
-      ani.kill();
-    };
+    return () => ani.kill();
   }, []);
 
   return (

@@ -20,9 +20,13 @@ const Wrapper = styled.div`
 const Title = styled.h1`
   font-size: 4.6rem;
   font-weight: 500;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   @media (max-width: 1024px) {
     font-size: 4rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 3rem;
+    margin-bottom: 20px;
   }
   @media (max-width: 480px) {
     font-size: 2.8rem;
@@ -86,6 +90,7 @@ const ImgWrap = styled.div`
     align-items: center;
     color: var(--white);
     opacity: 0;
+    font-size: 2rem;
   }
 
   &:hover {

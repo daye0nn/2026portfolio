@@ -15,7 +15,7 @@ const Inner = styled.nav`
   padding: 0 2%;
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* 사파리 호환성 */
+  -webkit-backdrop-filter: blur(10px); //사파리 호환성
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow:
     inset 0 0 60px rgba(255, 255, 255, 0.3),
@@ -25,12 +25,17 @@ const Inner = styled.nav`
 `;
 
 const Logo = styled.div`
+  font-weight: bold;
+  font-size: 2.4rem;
   button {
     background: none;
     border: none;
     cursor: pointer;
     font: inherit;
     color: inherit;
+  }
+  @media (max-width: 768px) {
+    font-size: 2rem;
   }
 `;
 
@@ -56,7 +61,7 @@ const Menu = styled.ul`
     opacity: 1;
     filter: blur(0);
   }
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
     gap: 2rem;
   }
 `;

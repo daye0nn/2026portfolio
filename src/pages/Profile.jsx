@@ -23,10 +23,10 @@ const Wrapper = styled.div`
 const Inner = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1.5fr 1fr;
   padding: 40px 80px;
   gap: 80px;
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     grid-template-columns: 1fr 1fr;
     gap: 60px;
   }
@@ -96,7 +96,7 @@ const Education = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
-  line-height: 1.2;
+  line-height: 1.5;
   h2 {
     font-weight: bold;
     font-size: 3rem;
@@ -167,8 +167,9 @@ const Icon = styled.div`
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(4, 1fr);
-  transition: all 0.3s;
-
+  & > img {
+    transition: opacity 0.3s ease;
+  }
   & > img:hover {
     cursor: pointer;
     opacity: 0.7;
@@ -271,10 +272,10 @@ const Profile = () => {
               <img src={figmaicon} alt="figma" />
               <img src={htmlicon} alt="html" />
               <img src={cssicon} alt="css" />
-              <img src={jsicon} alt="js" />
+              <img src={jsicon} alt="javascript" />
               <img src={scssicon} alt="scss" />
               <img src={reacticon} alt="react" />
-              <img src={tsicon} alt="ts" />
+              <img src={tsicon} alt="typescript" />
               <img src={githubicon} alt="github" />
             </Icon>
           </Skills>
