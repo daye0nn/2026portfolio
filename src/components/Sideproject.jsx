@@ -37,6 +37,13 @@ const Item = styled.div`
       }
     }
   }
+  @media (max-width: 480px) {
+    a {
+      p {
+        font-size: 1.8rem;
+      }
+    }
+  }
 `;
 
 const HoverImg = styled.div`

@@ -29,6 +29,11 @@ const Wrapper = styled.div`
       font-size: 5rem;
     }
   }
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 3rem;
+    }
+  }
 `;
 
 const Fmenu = styled.ul`
@@ -53,6 +58,9 @@ const Fmenu = styled.ul`
   }
   @media (max-width: 768px) {
     font-size: 1.8rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 1.6rem;
   }
 `;
 

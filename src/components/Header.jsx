@@ -21,7 +21,6 @@ const Inner = styled.nav`
     inset 0 0 60px rgba(255, 255, 255, 0.3),
     inset 0 0 60px rgba(255, 255, 255, 0.3),
     0 4px 20px rgba(0, 0, 20, 0.2);
-
   z-index: 10;
 `;
 
@@ -56,6 +55,9 @@ const Menu = styled.ul`
   li button:hover {
     opacity: 1;
     filter: blur(0);
+  }
+  @media (max-width: 480px) {
+    gap: 2rem;
   }
 `;
 

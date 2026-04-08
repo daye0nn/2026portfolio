@@ -16,24 +16,8 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: var(--light); */
   color: var(--text);
   position: relative;
-  /* padding-top: 50vh; */
-  /* &:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 30vh;
-    transform: translateY(0%);
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(247, 247, 247, 1) 100%
-    );
-  } */
 `;
 
 const Inner = styled.div`
@@ -61,15 +45,21 @@ const Info = styled.div`
   @media (max-width: 1024px) {
     font-size: 1.8rem;
   }
+  @media (max-width: 480px) {
+    font-size: 1.6rem;
+  }
 `;
 
 const ProfileImg = styled.div`
   width: 100%;
-  max-width: 300px;
+  max-width: 350px;
   img {
     width: 100%;
     height: auto;
     object-fit: cover;
+  }
+  @media (max-width: 480px) {
+    max-width: 250px;
   }
 `;
 
@@ -86,6 +76,9 @@ const Title = styled.p`
   text-transform: uppercase;
   @media (max-width: 1024px) {
     font-size: 1.8rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 1.6rem;
   }
 `;
 
@@ -136,6 +129,14 @@ const Education = styled.div`
       }
     }
   }
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 2rem;
+    }
+    div {
+      font-size: 1.6rem;
+    }
+  }
 `;
 
 const Certification = styled(Education)``;
@@ -153,6 +154,12 @@ const Skills = styled.div`
     h2 {
       font-size: 2.4rem;
     }
+  }
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 2rem;
+    }
+    font-size: 1.6rem;
   }
 `;
 

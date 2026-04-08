@@ -24,6 +24,9 @@ const Title = styled.h1`
   @media (max-width: 1024px) {
     font-size: 4rem;
   }
+  @media (max-width: 480px) {
+    font-size: 2.8rem;
+  }
 `;
 
 const TeamProject = styled.div`
@@ -51,6 +54,9 @@ const ProjectItem = styled.div`
     h2 {
       font-size: 2rem;
     }
+  }
+  @media (max-width: 480px) {
+    font-size: 1.8rem;
   }
 `;
 
