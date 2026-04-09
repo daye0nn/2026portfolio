@@ -251,6 +251,7 @@ body {
   position: relative;
 `,h_=K.div`
   width: 100%;
+  /* max-width: 1200px; */
   display: grid;
   grid-template-columns: 1fr 1.5fr 1fr;
   padding: 40px 80px;
@@ -479,7 +480,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   min-height: 100vh;
   padding: 80px;
   border-top: 1px solid var(--light-gray);
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     padding: 40px;
   }
 `,iy=K.h1`
@@ -493,7 +494,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     font-size: 3rem;
     margin-bottom: 20px;
   }
-  @media (max-width: 375px) {
+  @media (max-width: 400px) {
     font-size: 2.8rem;
   }
 `,ay=K.div`
@@ -520,7 +521,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       font-size: 2rem;
     }
   }
-  @media (max-width: 375px) {
+  @media (max-width: 400px) {
     font-size: 1.8rem;
   }
 `,sy=K.div`
@@ -571,7 +572,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     border-radius: 10px;
     white-space: nowrap;
   }
-  @media (max-width: 375px) {
+  @media (max-width: 400px) {
     span {
       font-size: 1.6rem;
     }
