@@ -22,6 +22,7 @@ const Wrapper = styled.div`
 
 const Inner = styled.div`
   width: 100%;
+  /* max-width: 1200px; */
   display: grid;
   grid-template-columns: 1fr 1.5fr 1fr;
   padding: 40px 80px;
