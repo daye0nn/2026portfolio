@@ -600,7 +600,10 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       font-size: 5rem;
     }
   }
-  @media (max-width: 375px) {
+  @media (max-width: 400px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
     h2 {
       font-size: 2.4rem;
       line-height: 1.5;
@@ -629,7 +632,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   @media (max-width: 768px) {
     font-size: 1.8rem;
   }
-  @media (max-width: 375px) {
+  @media (max-width: 400px) {
+    align-items: flex-start;
     font-size: 1.6rem;
     gap: 10px;
   }
