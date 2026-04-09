@@ -15,10 +15,10 @@ const Desc = styled.div`
     max-width: 700px;
   }
   @media (max-width: 768px) {
-    max-width: 450px;
+    max-width: 380px;
   }
-  @media (max-width: 375px) {
-    max-width: 400px;
+  @media (max-width: 400px) {
+    max-width: 300px;
   }
 `;
 
