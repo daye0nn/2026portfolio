@@ -22,7 +22,7 @@ const Inner = styled.nav`
     inset 0 0 60px rgba(255, 255, 255, 0.3),
     0 4px 20px rgba(0, 0, 20, 0.2);
   z-index: 10;
-  @media (max-width: 400px) {
+  @media (max-width: 768px) {
     width: calc(100% - 4rem);
   }
 `;
@@ -68,10 +68,10 @@ const Menu = styled.ul`
     filter: blur(0);
   }
   @media (max-width: 768px) {
-    gap: 2rem;
+    gap: 1rem;
   }
   @media (max-width: 400px) {
-    gap: 0.8rem;
+    gap: 6px;
   }
 `;
 
