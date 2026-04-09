@@ -599,6 +599,9 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     }
   }
   @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
     h2 {
       font-size: 5rem;
     }
@@ -634,6 +637,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
   @media (max-width: 768px) {
     font-size: 1.8rem;
+    align-items: flex-start;
   }
   @media (max-width: 400px) {
     align-items: flex-start;
