@@ -158,7 +158,7 @@ body {
   top: 2rem;
   left: 50%;
   transform: translateX(-50%);
-  width: calc(100% - 10rem);
+  width: calc(100% - 7rem);
   height: 5.6rem;
   display: flex;
   justify-content: space-between;
@@ -187,6 +187,9 @@ body {
   @media (max-width: 768px) {
     font-size: 2rem;
   }
+  @media (max-width: 375px) {
+    font-size: 1.8rem;
+  }
 `,hc=K.ul`
   display: flex;
   gap: 4rem;
@@ -211,6 +214,9 @@ body {
   }
   @media (max-width: 768px) {
     gap: 2rem;
+  }
+  @media (max-width: 375px) {
+    gap: 1rem;
   }
 `,gc=()=>{let e=Kn(),t=t=>{e(`/#${t}`)};return(0,q.jsx)(q.Fragment,{children:(0,q.jsxs)(pc,{children:[(0,q.jsx)(mc,{children:(0,q.jsx)(`h1`,{children:(0,q.jsx)(`button`,{onClick:()=>t(`intro`),children:`DAYEON`})})}),(0,q.jsxs)(hc,{children:[(0,q.jsx)(`li`,{children:(0,q.jsx)(`button`,{onClick:()=>t(`about`),children:`About Me`})}),(0,q.jsx)(`li`,{children:(0,q.jsx)(`button`,{onClick:()=>t(`project`),children:`Project`})}),(0,q.jsx)(`li`,{children:(0,q.jsx)(`button`,{onClick:()=>t(`contact`),children:`Contact`})})]})]})})},_c=K.div`
   position: fixed;
@@ -256,6 +262,7 @@ body {
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     gap: 60px;
+    padding: 40px;
   }
 `,g_=K.div`
   font-size: 2rem;
@@ -340,7 +347,7 @@ body {
       }
     }
   }
-  @media (max-width: 480px) {
+  @media (max-width: 375px) {
     h2 {
       font-size: 2rem;
     }
@@ -360,7 +367,7 @@ body {
       font-size: 2.4rem;
     }
   }
-  @media (max-width: 480px) {
+  @media (max-width: 375px) {
     h2 {
       font-size: 2rem;
     }
@@ -430,8 +437,10 @@ body {
       padding: 50px 0;
     }
   }
-  @media (max-width: 480px) {
+  @media (max-width: 375px) {
     a {
+      padding: 30px 0;
+      gap: 40px;
       p {
         font-size: 1.8rem;
       }
@@ -459,7 +468,10 @@ body {
     width: 250px;
     height: 150px;
   }
-`,R_=()=>((0,x.useEffect)(()=>{let e=document.querySelectorAll(`.hover`),t=document.querySelector(`.hover-img`),n=t.querySelector(`img`),r=window.innerWidth/2,i=window.innerHeight/2,a=r,o=i,s=!1,c=e=>{a=e.clientX,o=e.clientY},l=()=>{r+=(a-r)*.06,i+=(o-i)*.06,Dp.set(t,{x:r,y:i}),requestAnimationFrame(l)};l();let u=()=>{s||Dp.to(t,{opacity:0,scale:.9,duration:.2})};return e.forEach(e=>{e.addEventListener(`mouseenter`,()=>{s=!0,n.src=e.dataset.img,window.addEventListener(`mousemove`,c),Dp.to(t,{opacity:1,scale:1,duration:.2,ease:`none`,overwrite:`auto`})}),e.addEventListener(`mouseleave`,()=>{s=!1,window.removeEventListener(`mousemove`,c),Dp.to(t,{opacity:0,scale:.9,duration:.2})})}),window.addEventListener(`scroll`,u),window.addEventListener(`mouseleave`,u),()=>{window.removeEventListener(`mousemove`,c),window.removeEventListener(`scroll`,u),window.removeEventListener(`mouseleave`,u)}},[]),(0,q.jsxs)(q.Fragment,{children:[(0,q.jsxs)(F_,{children:[(0,q.jsx)(I_,{className:`hover`,"data-img":M_,children:(0,q.jsxs)(`a`,{href:`https://nexus-hanssem.netlify.app/`,target:`_blank`,children:[(0,q.jsx)(`p`,{children:`NEXUS`}),(0,q.jsx)(`span`,{children:`AOS 라이브러리를 활용한 한샘 넥서스 공홈 Clone `})]})}),(0,q.jsx)(I_,{className:`hover`,"data-img":N_,children:(0,q.jsxs)(`a`,{href:`https://movieflix-dayeon.netlify.app/`,target:`_blank`,children:[(0,q.jsx)(`p`,{children:`Movieflix`}),(0,q.jsx)(`span`,{children:`TMDB API를 활용한 넷플릭스 Javasvript Clone `})]})}),(0,q.jsx)(I_,{className:`hover`,"data-img":P_,children:(0,q.jsxs)(`a`,{href:`https://music-playlist01.netlify.app/`,target:`_blank`,children:[(0,q.jsx)(`p`,{children:`Music Player`}),(0,q.jsx)(`span`,{children:`HTML · CSS · JS`})]})})]}),(0,q.jsx)(L_,{className:`hover-img`,children:(0,q.jsx)(`img`,{src:M_,alt:`preview`})})]}));(function(){function e(){for(var e=arguments.length,t=0;t<e;t++){var n=t<0||arguments.length<=t?void 0:arguments[t];n.nodeType===1||n.nodeType===11?this.appendChild(n):this.appendChild(document.createTextNode(String(n)))}}function t(){for(;this.lastChild;)this.removeChild(this.lastChild);arguments.length&&this.append.apply(this,arguments)}function n(){var e=this.parentNode,t=[...arguments],n=t.length;if(e)for(n||e.removeChild(this);n--;){var r=t[n];typeof r==`object`?r.parentNode&&r.parentNode.removeChild(r):r=this.ownerDocument.createTextNode(r),n?e.insertBefore(this.previousSibling,r):e.replaceChild(r,this)}}typeof Element<`u`&&(Element.prototype.append||(Element.prototype.append=e,DocumentFragment.prototype.append=e),Element.prototype.replaceChildren||(Element.prototype.replaceChildren=t,DocumentFragment.prototype.replaceChildren=t),Element.prototype.replaceWith||(Element.prototype.replaceWith=n,DocumentFragment.prototype.replaceWith=n))})();function z_(e,t){if(!(e instanceof t))throw TypeError(`Cannot call a class as a function`)}function B_(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,`value`in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}function V_(e,t,n){return t&&B_(e.prototype,t),n&&B_(e,n),e}function H_(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function U_(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),n.push.apply(n,r)}return n}function W_(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]==null?{}:arguments[t];t%2?U_(Object(n),!0).forEach(function(t){H_(e,t,n[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):U_(Object(n)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))})}return e}function G_(e,t){return J_(e)||X_(e,t)||Z_(e,t)||ev()}function K_(e){return q_(e)||Y_(e)||Z_(e)||$_()}function q_(e){if(Array.isArray(e))return Q_(e)}function J_(e){if(Array.isArray(e))return e}function Y_(e){if(typeof Symbol<`u`&&Symbol.iterator in Object(e))return Array.from(e)}function X_(e,t){if(!(typeof Symbol>`u`||!(Symbol.iterator in Object(e)))){var n=[],r=!0,i=!1,a=void 0;try{for(var o=e[Symbol.iterator](),s;!(r=(s=o.next()).done)&&(n.push(s.value),!(t&&n.length===t));r=!0);}catch(e){i=!0,a=e}finally{try{!r&&o.return!=null&&o.return()}finally{if(i)throw a}}return n}}function Z_(e,t){if(e){if(typeof e==`string`)return Q_(e,t);var n=Object.prototype.toString.call(e).slice(8,-1);if(n===`Object`&&e.constructor&&(n=e.constructor.name),n===`Map`||n===`Set`)return Array.from(e);if(n===`Arguments`||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))return Q_(e,t)}}function Q_(e,t){(t==null||t>e.length)&&(t=e.length);for(var n=0,r=Array(t);n<t;n++)r[n]=e[n];return r}function $_(){throw TypeError(`Invalid attempt to spread non-iterable instance.
+  @media (max-width: 375px) {
+    display: none;
+  }
+`,R_=()=>((0,x.useEffect)(()=>{if(window.innerWidth<=375)return;let e=document.querySelectorAll(`.hover`),t=document.querySelector(`.hover-img`),n=t.querySelector(`img`),r=window.innerWidth/2,i=window.innerHeight/2,a=r,o=i,s=!1,c=e=>{a=e.clientX,o=e.clientY},l=()=>{r+=(a-r)*.06,i+=(o-i)*.06,Dp.set(t,{x:r,y:i}),requestAnimationFrame(l)};l();let u=()=>{s||Dp.to(t,{opacity:0,scale:.9,duration:.2})};return e.forEach(e=>{e.addEventListener(`mouseenter`,()=>{s=!0,n.src=e.dataset.img,window.addEventListener(`mousemove`,c),Dp.to(t,{opacity:1,scale:1,duration:.2,ease:`none`,overwrite:`auto`})}),e.addEventListener(`mouseleave`,()=>{s=!1,window.removeEventListener(`mousemove`,c),Dp.to(t,{opacity:0,scale:.9,duration:.2})})}),window.addEventListener(`scroll`,u),window.addEventListener(`mouseleave`,u),()=>{window.removeEventListener(`mousemove`,c),window.removeEventListener(`scroll`,u),window.removeEventListener(`mouseleave`,u)}},[]),(0,q.jsxs)(q.Fragment,{children:[(0,q.jsxs)(F_,{children:[(0,q.jsx)(I_,{className:`hover`,"data-img":M_,children:(0,q.jsxs)(`a`,{href:`https://nexus-hanssem.netlify.app/`,target:`_blank`,children:[(0,q.jsx)(`p`,{children:`NEXUS`}),(0,q.jsx)(`span`,{children:`AOS 라이브러리를 활용한 한샘 넥서스 공홈 Clone `})]})}),(0,q.jsx)(I_,{className:`hover`,"data-img":N_,children:(0,q.jsxs)(`a`,{href:`https://movieflix-dayeon.netlify.app/`,target:`_blank`,children:[(0,q.jsx)(`p`,{children:`Movieflix`}),(0,q.jsx)(`span`,{children:`TMDB API를 활용한 넷플릭스 Javasvript Clone `})]})}),(0,q.jsx)(I_,{className:`hover`,"data-img":P_,children:(0,q.jsxs)(`a`,{href:`https://music-playlist01.netlify.app/`,target:`_blank`,children:[(0,q.jsx)(`p`,{children:`Music Player`}),(0,q.jsx)(`span`,{children:`HTML · CSS · JS`})]})})]}),(0,q.jsx)(L_,{className:`hover-img`,children:(0,q.jsx)(`img`,{src:M_,alt:`preview`})})]}));(function(){function e(){for(var e=arguments.length,t=0;t<e;t++){var n=t<0||arguments.length<=t?void 0:arguments[t];n.nodeType===1||n.nodeType===11?this.appendChild(n):this.appendChild(document.createTextNode(String(n)))}}function t(){for(;this.lastChild;)this.removeChild(this.lastChild);arguments.length&&this.append.apply(this,arguments)}function n(){var e=this.parentNode,t=[...arguments],n=t.length;if(e)for(n||e.removeChild(this);n--;){var r=t[n];typeof r==`object`?r.parentNode&&r.parentNode.removeChild(r):r=this.ownerDocument.createTextNode(r),n?e.insertBefore(this.previousSibling,r):e.replaceChild(r,this)}}typeof Element<`u`&&(Element.prototype.append||(Element.prototype.append=e,DocumentFragment.prototype.append=e),Element.prototype.replaceChildren||(Element.prototype.replaceChildren=t,DocumentFragment.prototype.replaceChildren=t),Element.prototype.replaceWith||(Element.prototype.replaceWith=n,DocumentFragment.prototype.replaceWith=n))})();function z_(e,t){if(!(e instanceof t))throw TypeError(`Cannot call a class as a function`)}function B_(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,`value`in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}function V_(e,t,n){return t&&B_(e.prototype,t),n&&B_(e,n),e}function H_(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function U_(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),n.push.apply(n,r)}return n}function W_(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]==null?{}:arguments[t];t%2?U_(Object(n),!0).forEach(function(t){H_(e,t,n[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):U_(Object(n)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))})}return e}function G_(e,t){return J_(e)||X_(e,t)||Z_(e,t)||ev()}function K_(e){return q_(e)||Y_(e)||Z_(e)||$_()}function q_(e){if(Array.isArray(e))return Q_(e)}function J_(e){if(Array.isArray(e))return e}function Y_(e){if(typeof Symbol<`u`&&Symbol.iterator in Object(e))return Array.from(e)}function X_(e,t){if(!(typeof Symbol>`u`||!(Symbol.iterator in Object(e)))){var n=[],r=!0,i=!1,a=void 0;try{for(var o=e[Symbol.iterator](),s;!(r=(s=o.next()).done)&&(n.push(s.value),!(t&&n.length===t));r=!0);}catch(e){i=!0,a=e}finally{try{!r&&o.return!=null&&o.return()}finally{if(i)throw a}}return n}}function Z_(e,t){if(e){if(typeof e==`string`)return Q_(e,t);var n=Object.prototype.toString.call(e).slice(8,-1);if(n===`Object`&&e.constructor&&(n=e.constructor.name),n===`Map`||n===`Set`)return Array.from(e);if(n===`Arguments`||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))return Q_(e,t)}}function Q_(e,t){(t==null||t>e.length)&&(t=e.length);for(var n=0,r=Array(t);n<t;n++)r[n]=e[n];return r}function $_(){throw TypeError(`Invalid attempt to spread non-iterable instance.
 In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`)}function ev(){throw TypeError(`Invalid attempt to destructure non-iterable instance.
 In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`)}function tv(e,t){return Object.getOwnPropertyNames(Object(e)).reduce(function(n,r){return Object.defineProperty(n,r,Object.getOwnPropertyDescriptor(Object(t),r)||Object.getOwnPropertyDescriptor(Object(e),r))},{})}function nv(e){return typeof e==`string`}function rv(e){return Array.isArray(e)}function iv(){var e=arguments.length>0&&arguments[0]!==void 0?arguments[0]:{},t=tv(e),n;return t.types===void 0?t.split!==void 0&&(n=t.split):n=t.types,n!==void 0&&(t.types=(nv(n)||rv(n)?String(n):``).split(`,`).map(function(e){return String(e).trim()}).filter(function(e){return/((line)|(word)|(char))/i.test(e)})),(t.absolute||t.position)&&(t.absolute=t.absolute||/absolute/.test(e.position)),t}function av(e){var t=nv(e)||rv(e)?String(e):``;return{none:!t,lines:/line/i.test(t),words:/word/i.test(t),chars:/char/i.test(t)}}function ov(e){return typeof e==`object`&&!!e}function sv(e){return ov(e)&&/^(1|3|11)$/.test(e.nodeType)}function cv(e){return typeof e==`number`&&e>-1&&e%1==0}function lv(e){return ov(e)&&cv(e.length)}function uv(e){return rv(e)?e:e==null?[]:lv(e)?Array.prototype.slice.call(e):[e]}function dv(e){var t=e;return nv(e)&&(t=/^(#[a-z]\w+)$/.test(e.trim())?document.getElementById(e.trim().slice(1)):document.querySelectorAll(e)),uv(t).reduce(function(e,t){return[].concat(K_(e),K_(uv(t).filter(sv)))},[])}var fv=Object.entries,pv=`_splittype`,mv={},hv=0;function gv(e,t,n){if(!ov(e))return console.warn(`[data.set] owner is not an object`),null;var r=e[pv]||(e[pv]=++hv),i=mv[r]||(mv[r]={});return n===void 0?t&&Object.getPrototypeOf(t)===Object.prototype&&(mv[r]=W_(W_({},i),t)):t!==void 0&&(i[t]=n),n}function _v(e,t){var n=ov(e)?e[pv]:null,r=n&&mv[n]||{};return t===void 0?r:r[t]}function vv(e){var t=e&&e[pv];t&&(delete e[t],delete mv[t])}function yv(){Object.keys(mv).forEach(function(e){delete mv[e]})}function bv(){fv(mv).forEach(function(e){var t=G_(e,2),n=t[0],r=t[1],i=r.isRoot,a=r.isSplit;(!i||!a)&&(mv[n]=null,delete mv[n])})}function xv(e){var t=arguments.length>1&&arguments[1]!==void 0?arguments[1]:` `;return(e?String(e):``).trim().replace(/\s+/g,` `).split(t)}var Sv=`\\ud800-\\udfff`,Cv=`\\u0300-\\u036f\\ufe20-\\ufe23`,wv=`\\u20d0-\\u20f0`,Tv=`\\ufe0e\\ufe0f`,Ev=`[${Sv}]`,Dv=`[${Cv}${wv}]`,Ov=`\\ud83c[\\udffb-\\udfff]`,kv=`(?:${Dv}|${Ov})`,Av=`[^${Sv}]`,jv=`(?:\\ud83c[\\udde6-\\uddff]){2}`,Mv=`[\\ud800-\\udbff][\\udc00-\\udfff]`,Nv=`\\u200d`,Pv=`${kv}?`,Fv=`[${Tv}]?`,Iv=`(?:`+Nv+`(?:`+[Av,jv,Mv].join(`|`)+`)`+Fv+Pv+`)*`,Lv=Fv+Pv+Iv,Rv=`(?:${[`${Av}${Dv}?`,Dv,jv,Mv,Ev].join(`|`)}
 )`,zv=RegExp(`${Ov}(?=${Ov})|${Rv}${Lv}`,`g`),Bv=RegExp(`[${[Nv,Sv,Cv,wv,Tv].join(``)}]`);function Vv(e){return e.split(``)}function Hv(e){return Bv.test(e)}function Uv(e){return e.match(zv)||[]}function Wv(e){return Hv(e)?Uv(e):Vv(e)}function Gv(e){return e==null?``:String(e)}function Kv(e){var t=arguments.length>1&&arguments[1]!==void 0?arguments[1]:``;return e=Gv(e),e&&nv(e)&&!t&&Hv(e)?Wv(e):e.split(t)}function qv(e,t){var n=document.createElement(e);return t&&Object.keys(t).forEach(function(e){var r=t[e],i=nv(r)?r.trim():r;i===null||i===``||(e===`children`?n.append.apply(n,K_(uv(i))):n.setAttribute(e,i))}),n}var Jv={splitClass:``,lineClass:`line`,wordClass:`word`,charClass:`char`,types:[`lines`,`words`,`chars`],absolute:!1,tagName:`div`};function Yv(e,t){t=tv(Jv,t);var n=av(t.types),r=t.tagName,i=e.nodeValue,a=document.createDocumentFragment(),o=[],s=[];return/^\s/.test(i)&&a.append(` `),o=xv(i).reduce(function(e,i,o,c){var l,u;return n.chars&&(u=Kv(i).map(function(e){var n=qv(r,{class:`${t.splitClass} ${t.charClass}`,style:`display: inline-block;`,children:e});return gv(n,`isChar`,!0),s=[].concat(K_(s),[n]),n})),n.words||n.lines?(l=qv(r,{class:`${t.wordClass} ${t.splitClass}`,style:`display: inline-block; ${n.words&&t.absolute?`position: relative;`:``}`,children:n.chars?u:i}),gv(l,{isWord:!0,isWordStart:!0,isWordEnd:!0}),a.appendChild(l)):u.forEach(function(e){a.appendChild(e)}),o<c.length-1&&a.append(` `),n.words?e.concat(l):e},[]),/\s$/.test(i)&&a.append(` `),e.replaceWith(a),{words:o,chars:s}}function Xv(e,t){var n=e.nodeType,r={words:[],chars:[]};if(!/(1|3|11)/.test(n))return r;if(n===3&&/\S/.test(e.nodeValue))return Yv(e,t);var i=uv(e.childNodes);if(i.length&&(gv(e,`isSplit`,!0),!_v(e).isRoot)){e.style.display=`inline-block`,e.style.position=`relative`;var a=e.nextSibling,o=e.previousSibling,s=e.textContent||``,c=a?a.textContent:` `,l=o?o.textContent:` `;gv(e,{isWordEnd:/\s$/.test(s)||/^\s/.test(c),isWordStart:/^\s/.test(s)||/\s$/.test(l)})}return i.reduce(function(e,n){var r=Xv(n,t),i=r.words,a=r.chars;return{words:[].concat(K_(e.words),K_(i)),chars:[].concat(K_(e.chars),K_(a))}},r)}function Zv(e,t,n,r){if(!n.absolute)return{top:t?e.offsetTop:null};var i=e.offsetParent,a=G_(r,2),o=a[0],s=a[1],c=0,l=0;if(i&&i!==document.body){var u=i.getBoundingClientRect();c=u.x+o,l=u.y+s}var d=e.getBoundingClientRect(),f=d.width,p=d.height,m=d.x;return{width:f,height:p,top:d.y+s-l,left:m+o-c}}function Qv(e){_v(e).isWord?(vv(e),e.replaceWith.apply(e,K_(e.childNodes))):uv(e.children).forEach(function(e){return Qv(e)})}var $v=function(){return document.createDocumentFragment()};function ey(e,t,n){var r=av(t.types),i=t.tagName,a=e.getElementsByTagName(`*`),o=[],s=[],c=null,l,u,d,f=[],p=e.parentElement,m=e.nextElementSibling,h=$v(),g=window.getComputedStyle(e),_=g.textAlign,v=parseFloat(g.fontSize)*.2;return t.absolute&&(d={left:e.offsetLeft,top:e.offsetTop,width:e.offsetWidth},u=e.offsetWidth,l=e.offsetHeight,gv(e,{cssWidth:e.style.width,cssHeight:e.style.height})),uv(a).forEach(function(i){var a=i.parentElement===e,l=Zv(i,a,t,n),u=l.width,d=l.height,f=l.top,p=l.left;/^br$/i.test(i.nodeName)||(r.lines&&a&&((c===null||f-c>=v)&&(c=f,o.push(s=[])),s.push(i)),t.absolute&&gv(i,{top:f,left:p,width:u,height:d}))}),p&&p.removeChild(e),r.lines&&(f=o.map(function(e){var n=qv(i,{class:`${t.splitClass} ${t.lineClass}`,style:`display: block; text-align: ${_}; width: 100%;`});gv(n,`isLine`,!0);var r={height:0,top:1e4};return h.appendChild(n),e.forEach(function(e,t,i){var a=_v(e),o=a.isWordEnd,s=a.top,c=a.height,l=i[t+1];r.height=Math.max(r.height,c),r.top=Math.min(r.top,s),n.appendChild(e),o&&_v(l).isWordStart&&n.append(` `)}),t.absolute&&gv(n,{height:r.height,top:r.top}),n}),r.words||Qv(h),e.replaceChildren(h)),t.absolute&&(e.style.width=`${e.style.width||u}px`,e.style.height=`${l}px`,uv(a).forEach(function(e){var t=_v(e),n=t.isLine,r=t.top,i=t.left,a=t.width,o=t.height,s=_v(e.parentElement),c=!n&&s.isLine;e.style.top=`${c?r-s.top:r}px`,e.style.left=n?`${d.left}px`:`${i-(c?d.left:0)}px`,e.style.height=`${o}px`,e.style.width=n?`${d.width}px`:`${a}px`,e.style.position=`absolute`})),p&&(m?p.insertBefore(e,m):p.appendChild(e)),f}var ty=tv(Jv,{}),ny=function(){V_(e,null,[{key:`clearData`,value:function(){yv()}},{key:`setDefaults`,value:function(e){return ty=tv(ty,iv(e)),Jv}},{key:`revert`,value:function(e){dv(e).forEach(function(e){var t=_v(e),n=t.isSplit,r=t.html,i=t.cssWidth,a=t.cssHeight;n&&(e.innerHTML=r,e.style.width=i||``,e.style.height=a||``,vv(e))})}},{key:`create`,value:function(t,n){return new e(t,n)}},{key:`data`,get:function(){return mv}},{key:`defaults`,get:function(){return ty},set:function(e){ty=tv(ty,iv(e))}}]);function e(t,n){z_(this,e),this.isSplit=!1,this.settings=tv(ty,iv(n)),this.elements=dv(t),this.split()}return V_(e,[{key:`split`,value:function(e){var t=this;this.revert(),this.elements.forEach(function(e){gv(e,`html`,e.innerHTML)}),this.lines=[],this.words=[],this.chars=[];var n=[window.pageXOffset,window.pageYOffset];e!==void 0&&(this.settings=tv(this.settings,iv(e)));var r=av(this.settings.types);r.none||(this.elements.forEach(function(e){gv(e,`isRoot`,!0);var n=Xv(e,t.settings),r=n.words,i=n.chars;t.words=[].concat(K_(t.words),K_(r)),t.chars=[].concat(K_(t.chars),K_(i))}),this.elements.forEach(function(e){if(r.lines||t.settings.absolute){var i=ey(e,t.settings,n);t.lines=[].concat(K_(t.lines),K_(i))}}),this.isSplit=!0,window.scrollTo(n[0],n[1]),bv())}},{key:`revert`,value:function(){this.isSplit&&=(this.lines=null,this.words=null,this.chars=null,!1),e.revert(this.elements)}}]),e}();Dp.registerPlugin(X);var ry=K.div`
@@ -467,6 +479,9 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   min-height: 100vh;
   padding: 80px;
   border-top: 1px solid var(--light-gray);
+  @media (max-width: 375px) {
+    padding: 40px;
+  }
 `,iy=K.h1`
   font-size: 4.6rem;
   font-weight: 500;
@@ -478,7 +493,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     font-size: 3rem;
     margin-bottom: 20px;
   }
-  @media (max-width: 480px) {
+  @media (max-width: 375px) {
     font-size: 2.8rem;
   }
 `,ay=K.div`
@@ -505,7 +520,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       font-size: 2rem;
     }
   }
-  @media (max-width: 480px) {
+  @media (max-width: 375px) {
     font-size: 1.8rem;
   }
 `,sy=K.div`
@@ -556,6 +571,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     border-radius: 10px;
     white-space: nowrap;
   }
+  @media (max-width: 375px) {
+    span {
+      font-size: 1.6rem;
+    }
+  }
 `,ly=()=>{let e=Kn();return(0,x.useEffect)(()=>(document.querySelectorAll(`.split`).forEach(e=>{let t=new ny(e,{types:`lines`});Dp.from(t.lines,{y:80,opacity:0,duration:1,stagger:.1,ease:`power2.out`,scrollTrigger:{trigger:e,start:`top 80%`,toggleActions:`play none none reverse`}})}),()=>{X.getAll().forEach(e=>e.kill())}),[]),(0,q.jsx)(q.Fragment,{children:(0,q.jsxs)(ry,{children:[(0,q.jsx)(iy,{className:`split`,children:`Team Project`}),(0,q.jsxs)(ay,{children:[(0,q.jsxs)(oy,{children:[(0,q.jsxs)(sy,{onClick:()=>e(`/zip`),children:[(0,q.jsx)(`img`,{src:A_,alt:`프로젝트1`}),(0,q.jsx)(`div`,{className:`overlay`,children:`VIEW PROJECT`})]}),(0,q.jsx)(`h2`,{children:`ZIP.`}),(0,q.jsx)(`p`,{children:`패션 매거진의 인마이백 영상 속 제품을 기반으로, 스타의 실제 사용템만을 선별하여 소개하고 판매하는 OTT와 커머스를 결합한 플랫폼`}),(0,q.jsxs)(cy,{children:[(0,q.jsx)(`span`,{children:`반응형`}),(0,q.jsx)(`span`,{children:`Figma`}),(0,q.jsx)(`span`,{children:`React`}),(0,q.jsx)(`span`,{children:`StyledComponents`}),(0,q.jsx)(`span`,{children:`Youtube API`}),(0,q.jsx)(`span`,{children:`React-Query`}),(0,q.jsx)(`span`,{children:`Firebase`})]})]}),(0,q.jsxs)(oy,{children:[(0,q.jsxs)(sy,{onClick:()=>e(`/nongdam`),children:[(0,q.jsx)(`img`,{src:j_,alt:`프로젝트2`}),(0,q.jsx)(`div`,{className:`overlay`,children:`VIEW PROJECT`})]}),(0,q.jsx)(`h2`,{children:`농장을 담다`}),(0,q.jsx)(`p`,{children:`버려지던 못난이 농산물을 선별해 합리적인 가격에 제공해 가치 소비와 합리적 소비를 동시에 실현하는 농산물 커머스 플랫폼`}),(0,q.jsxs)(cy,{children:[(0,q.jsx)(`span`,{children:`반응형`}),(0,q.jsx)(`span`,{children:`Figma`}),(0,q.jsx)(`span`,{children:`HTML`}),(0,q.jsx)(`span`,{children:`SCSS`}),(0,q.jsx)(`span`,{children:`JS`})]})]})]}),(0,q.jsx)(iy,{className:`split`,children:`Side Project`}),(0,q.jsx)(R_,{})]})})};Dp.registerPlugin(X);var uy=K.div`
   width: 100%;
   height: 40vh;
@@ -579,9 +599,10 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       font-size: 5rem;
     }
   }
-  @media (max-width: 480px) {
+  @media (max-width: 375px) {
     h2 {
-      font-size: 3rem;
+      font-size: 2.4rem;
+      line-height: 1.5;
     }
   }
 `,dy=K.ul`
@@ -607,8 +628,9 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   @media (max-width: 768px) {
     font-size: 1.8rem;
   }
-  @media (max-width: 480px) {
+  @media (max-width: 375px) {
     font-size: 1.6rem;
+    gap: 10px;
   }
 `,fy=()=>{let e=(0,x.useRef)(null);return(0,x.useEffect)(()=>{let t=new ny(e.current,{types:`words`});return Dp.from(t.words,{y:100,opacity:0,stagger:.05,duration:1,ease:`power2.out`,scrollTrigger:{trigger:e.current,start:`top 80%`,toggleActions:`play none none reverse`}}),()=>{t.revert()}},[]),(0,q.jsx)(q.Fragment,{children:(0,q.jsxs)(uy,{children:[(0,q.jsxs)(`h2`,{ref:e,children:[`Let's`,(0,q.jsx)(`br`,{}),`Work`,(0,q.jsx)(`br`,{}),`Together`]}),(0,q.jsxs)(dy,{children:[(0,q.jsx)(`li`,{children:`010.2678.1142`}),(0,q.jsx)(`li`,{children:(0,q.jsx)(`a`,{href:`mailto:dayeonnchoi@gmail.com`,children:`dayeonnchoi@gmail.com`})}),(0,q.jsx)(`li`,{children:(0,q.jsx)(`a`,{href:`https://github.com/daye0nn`,target:`_blank`,children:`Github`})})]})]})})};Dp.registerPlugin(X);var py=()=>{(0,x.useEffect)(()=>{let e=document.querySelector(`#about`);if(e)return Dp.to(document.documentElement,{scrollTrigger:{trigger:e,start:`top 100%`,end:`top 0%`,scrub:1.5},"--bg":`#fafafa`,ease:`none`}),()=>X.getAll().forEach(e=>e.kill())},[]);let e=Un();return(0,x.useEffect)(()=>{if(e.hash){let t=document.querySelector(e.hash);t&&window.lenis&&window.lenis.scrollTo(t)}},[e]),(0,q.jsxs)(q.Fragment,{children:[(0,q.jsx)(`section`,{id:`intro`,children:(0,q.jsx)(r_,{})}),(0,q.jsx)(`section`,{id:`about`,children:(0,q.jsx)(k_,{})}),(0,q.jsx)(`section`,{id:`project`,children:(0,q.jsx)(ly,{})}),(0,q.jsx)(`section`,{id:`contact`,children:(0,q.jsx)(fy,{})})]})};function my(e,t){(t==null||t>e.length)&&(t=e.length);for(var n=0,r=Array(t);n<t;n++)r[n]=e[n];return r}function hy(e){if(Array.isArray(e))return e}function gy(e){if(Array.isArray(e))return my(e)}function _y(e,t){if(!(e instanceof t))throw TypeError(`Cannot call a class as a function`)}function vy(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,`value`in r&&(r.writable=!0),Object.defineProperty(e,ky(r.key),r)}}function yy(e,t,n){return t&&vy(e.prototype,t),n&&vy(e,n),Object.defineProperty(e,`prototype`,{writable:!1}),e}function by(e,t){var n=typeof Symbol<`u`&&e[Symbol.iterator]||e[`@@iterator`];if(!n){if(Array.isArray(e)||(n=jy(e))||t&&e&&typeof e.length==`number`){n&&(e=n);var r=0,i=function(){};return{s:i,n:function(){return r>=e.length?{done:!0}:{done:!1,value:e[r++]}},e:function(e){throw e},f:i}}throw TypeError(`Invalid attempt to iterate non-iterable instance.
 In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`)}var a,o=!0,s=!1;return{s:function(){n=n.call(e)},n:function(){var e=n.next();return o=e.done,e},e:function(e){s=!0,a=e},f:function(){try{o||n.return==null||n.return()}finally{if(s)throw a}}}}function Z(e,t,n){return(t=ky(t))in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function xy(e){if(typeof Symbol<`u`&&e[Symbol.iterator]!=null||e[`@@iterator`]!=null)return Array.from(e)}function Sy(e,t){var n=e==null?null:typeof Symbol<`u`&&e[Symbol.iterator]||e[`@@iterator`];if(n!=null){var r,i,a,o,s=[],c=!0,l=!1;try{if(a=(n=n.call(e)).next,t===0){if(Object(n)!==n)return;c=!1}else for(;!(c=(r=a.call(n)).done)&&(s.push(r.value),s.length!==t);c=!0);}catch(e){l=!0,i=e}finally{try{if(!c&&n.return!=null&&(o=n.return(),Object(o)!==o))return}finally{if(l)throw i}}return s}}function Cy(){throw TypeError(`Invalid attempt to destructure non-iterable instance.
@@ -1180,7 +1202,7 @@ If it declares any Font Awesome CSS pseudo-elements, they will not be rendered a
   @media (max-width: 768px) {
     max-width: 450px;
   }
-  @media (max-width: 480px) {
+  @media (max-width: 375px) {
     max-width: 400px;
   }
 `,cT=K.h1`
