@@ -1212,10 +1212,10 @@ If it declares any Font Awesome CSS pseudo-elements, they will not be rendered a
     max-width: 700px;
   }
   @media (max-width: 768px) {
-    max-width: 450px;
+    max-width: 380px;
   }
-  @media (max-width: 375px) {
-    max-width: 400px;
+  @media (max-width: 400px) {
+    max-width: 300px;
   }
 `,cT=K.h1`
   font-size: 4.6rem;
