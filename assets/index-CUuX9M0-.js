@@ -174,7 +174,7 @@ body {
     inset 0 0 60px rgba(255, 255, 255, 0.3),
     0 4px 20px rgba(0, 0, 20, 0.2);
   z-index: 10;
-  @media (max-width: 400px) {
+  @media (max-width: 768px) {
     width: calc(100% - 4rem);
   }
 `,mc=K.div`
@@ -216,10 +216,10 @@ body {
     filter: blur(0);
   }
   @media (max-width: 768px) {
-    gap: 2rem;
+    gap: 1rem;
   }
   @media (max-width: 400px) {
-    gap: 0.8rem;
+    gap: 6px;
   }
 `,gc=()=>{let e=Kn(),t=t=>{e(`/#${t}`)};return(0,q.jsx)(q.Fragment,{children:(0,q.jsxs)(pc,{children:[(0,q.jsx)(mc,{children:(0,q.jsx)(`h1`,{children:(0,q.jsx)(`button`,{onClick:()=>t(`intro`),children:`DAYEON`})})}),(0,q.jsxs)(hc,{children:[(0,q.jsx)(`li`,{children:(0,q.jsx)(`button`,{onClick:()=>t(`about`),children:`About Me`})}),(0,q.jsx)(`li`,{children:(0,q.jsx)(`button`,{onClick:()=>t(`project`),children:`Project`})}),(0,q.jsx)(`li`,{children:(0,q.jsx)(`button`,{onClick:()=>t(`contact`),children:`Contact`})})]})]})})},_c=K.div`
   position: fixed;
