@@ -189,6 +189,9 @@ const Object = styled.div`
     height: 100%;
     object-fit: cover;
   }
+  @media (max-width: 400px) {
+    display: none;
+  }
 `;
 
 const spin = keyframes`
