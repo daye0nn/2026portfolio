@@ -399,6 +399,9 @@ body {
     height: 100%;
     object-fit: cover;
   }
+  @media (max-width: 400px) {
+    display: none;
+  }
 `,D_=Gs`
   from {
     transform: rotate(0deg);
