@@ -6,7 +6,7 @@ const Inner = styled.nav`
   top: 2rem;
   left: 50%;
   transform: translateX(-50%);
-  width: calc(100% - 10rem);
+  width: calc(100% - 7rem);
   height: 5.6rem;
   display: flex;
   justify-content: space-between;
@@ -37,6 +37,9 @@ const Logo = styled.div`
   @media (max-width: 768px) {
     font-size: 2rem;
   }
+  @media (max-width: 375px) {
+    font-size: 1.8rem;
+  }
 `;
 
 const Menu = styled.ul`
@@ -63,6 +66,9 @@ const Menu = styled.ul`
   }
   @media (max-width: 768px) {
     gap: 2rem;
+  }
+  @media (max-width: 375px) {
+    gap: 1rem;
   }
 `;
 

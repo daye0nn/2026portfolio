@@ -33,6 +33,7 @@ const Inner = styled.div`
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     gap: 60px;
+    padding: 40px;
   }
 `;
 
@@ -129,7 +130,7 @@ const Education = styled.div`
       }
     }
   }
-  @media (max-width: 480px) {
+  @media (max-width: 375px) {
     h2 {
       font-size: 2rem;
     }
@@ -155,7 +156,7 @@ const Skills = styled.div`
       font-size: 2.4rem;
     }
   }
-  @media (max-width: 480px) {
+  @media (max-width: 375px) {
     h2 {
       font-size: 2rem;
     }

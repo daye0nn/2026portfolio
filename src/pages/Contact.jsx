@@ -29,9 +29,10 @@ const Wrapper = styled.div`
       font-size: 5rem;
     }
   }
-  @media (max-width: 480px) {
+  @media (max-width: 375px) {
     h2 {
-      font-size: 3rem;
+      font-size: 2.4rem;
+      line-height: 1.5;
     }
   }
 `;
@@ -59,8 +60,9 @@ const Fmenu = styled.ul`
   @media (max-width: 768px) {
     font-size: 1.8rem;
   }
-  @media (max-width: 480px) {
+  @media (max-width: 375px) {
     font-size: 1.6rem;
+    gap: 10px;
   }
 `;
 

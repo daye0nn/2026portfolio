@@ -15,6 +15,9 @@ const Wrapper = styled.div`
   min-height: 100vh;
   padding: 80px;
   border-top: 1px solid var(--light-gray);
+  @media (max-width: 375px) {
+    padding: 40px;
+  }
 `;
 
 const Title = styled.h1`
@@ -28,7 +31,7 @@ const Title = styled.h1`
     font-size: 3rem;
     margin-bottom: 20px;
   }
-  @media (max-width: 480px) {
+  @media (max-width: 375px) {
     font-size: 2.8rem;
   }
 `;
@@ -59,7 +62,7 @@ const ProjectItem = styled.div`
       font-size: 2rem;
     }
   }
-  @media (max-width: 480px) {
+  @media (max-width: 375px) {
     font-size: 1.8rem;
   }
 `;
@@ -113,6 +116,11 @@ const Tag = styled.div`
     padding: 10px;
     border-radius: 10px;
     white-space: nowrap;
+  }
+  @media (max-width: 375px) {
+    span {
+      font-size: 1.6rem;
+    }
   }
 `;
 

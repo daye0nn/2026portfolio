@@ -41,8 +41,10 @@ const Item = styled.div`
       padding: 50px 0;
     }
   }
-  @media (max-width: 480px) {
+  @media (max-width: 375px) {
     a {
+      padding: 30px 0;
+      gap: 40px;
       p {
         font-size: 1.8rem;
       }
@@ -72,10 +74,15 @@ const HoverImg = styled.div`
     width: 250px;
     height: 150px;
   }
+  @media (max-width: 375px) {
+    display: none;
+  }
 `;
 
 const Sideproject = () => {
+  //오버 시 프리뷰 이벤트
   useEffect(() => {
+    if (window.innerWidth <= 375) return; // 모바일에서 오버이벤트 삭제
     const items = document.querySelectorAll(".hover");
     const imgBox = document.querySelector(".hover-img");
     const img = imgBox.querySelector("img");
