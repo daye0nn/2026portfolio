@@ -256,6 +256,9 @@ const Profile = () => {
               <h2>Certification</h2>
               <div>
                 <p>
+                  <span>2026.04</span> 웹디자인개발기능사
+                </p>
+                <p>
                   <span>2022.07</span> 인공지능전문가 자격증 AIEC
                 </p>
               </div>
